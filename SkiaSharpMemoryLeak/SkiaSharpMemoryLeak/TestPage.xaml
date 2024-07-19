@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SkiaSharpMemoryLeak.TestPage"
+             xmlns:local="clr-namespace:SkiaSharpMemoryLeak" 
+             Title="TestPage">
+    <Grid HorizontalOptions="Fill" VerticalOptions="Fill">
+        <local:BackgroundView BackgroundBitmap="OldPaper" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        <VerticalStackLayout HorizontalOptions="Center" Spacing="6">
+            <Label x:Name="Title2Label" Text="Testing" FontSize="15" HorizontalOptions="Center"/>
+            <Label x:Name="TitleLabel" FontSize="15" HorizontalOptions="Center"/>
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+            <local:BackgroundView WidthRequest="200" HeightRequest="50" BackgroundBitmap="Button" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
