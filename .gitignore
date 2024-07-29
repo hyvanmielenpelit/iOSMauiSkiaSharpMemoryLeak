@@ -1,6 +1,5 @@
 *.v2
 *.wsuo
-*.json
 
 # User-specific files
 *.suo
@@ -55,7 +54,6 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
-**/Properties/launchSettings.json
 
 # StyleCop
 StyleCopReport.xml
