@@ -41,11 +41,9 @@
 	<PropertyGroup Condition="'$(TargetFramework)'=='net9.0-ios'">
 	  <CodesignKey>Apple Development: Janne Gustafsson (3JF32923Y3)</CodesignKey>
 	  <CodesignProvision>VS: WildCard Development</CodesignProvision>
-	</PropertyGroup>
-
-  <PropertyGroup Condition="$(TargetFramework.Contains('-ios'))">
     <UseInterpreter>false</UseInterpreter>
     <MtouchInterpreter>-all</MtouchInterpreter>
+    <MtouchLink>None</MtouchLink>
     <MtouchUseLlvm>false</MtouchUseLlvm>
   </PropertyGroup>
 
@@ -53,10 +51,6 @@
     <_MauiForceXamlCForDebug>true</_MauiForceXamlCForDebug>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)'=='Debug|net9.0-ios'">
-    <MtouchLink>None</MtouchLink>
   </PropertyGroup>
 
   <ItemGroup>
