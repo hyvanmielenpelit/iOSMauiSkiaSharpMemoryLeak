@@ -46,6 +46,7 @@
   <PropertyGroup Condition="$(TargetFramework.Contains('-ios'))">
     <UseInterpreter>false</UseInterpreter>
     <MtouchInterpreter>-all</MtouchInterpreter>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
